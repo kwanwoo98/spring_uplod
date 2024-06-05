@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="825db2de-2b84-4fac-92b6-bf2b7814b5da" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/config/CustomServletConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/controller/BoardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/controller/ReplyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/controller/advice/CustomRestAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/domain/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/domain/Notice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/dto/MemberDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/dto/NoticeDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/dto/PageRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/dto/PageResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/dto/ReplyDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/repository/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/repository/NoticeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/repository/NoticeSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/repository/NoticeSearchImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/service/MemberServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/service/NoticeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/service/NoticeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/resources/memo/6_REST_memo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/resources/static/assets/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/resources/static/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/resources/static/js/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/board/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/board/modify.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/board/read.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/board/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/notice_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/notice_modify.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/notice_view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/layout/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01_1/.idea/modules/b01.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01_1/.idea/modules/b01.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../b01_1/b01_1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/java/org/zerock/bookmarket/config/ModelMapperConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/java/org/zerock/bookmarket/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/java/org/zerock/bookmarket/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/java/org/zerock/bookmarket/controller/formatter/CheckboxFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/java/org/zerock/bookmarket/controller/formatter/LocalDateFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/java/org/zerock/bookmarket/domain/MemberVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/java/org/zerock/bookmarket/dto/BookDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/java/org/zerock/bookmarket/dto/MemberDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/java/org/zerock/bookmarket/mapper/BookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/java/org/zerock/bookmarket/mapper/MemberMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/java/org/zerock/bookmarket/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/java/org/zerock/bookmarket/service/BookserviceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/java/org/zerock/bookmarket/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/java/org/zerock/bookmarket/service/MemberServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/resources/mappers/BookMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/resources/mappers/MemberMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/webapp/WEB-INF/root-context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/webapp/WEB-INF/servlet-context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/webapp/WEB-INF/views/book/addBook.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/webapp/WEB-INF/views/book/book.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/webapp/WEB-INF/views/book/books.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/webapp/WEB-INF/views/book/editBook.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/webapp/WEB-INF/views/book/updateBook.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/webapp/WEB-INF/views/error/exceptionNoPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/webapp/WEB-INF/views/error/exceptionNoProductId.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/webapp/WEB-INF/views/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/webapp/WEB-INF/views/member/join.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/webapp/WEB-INF/views/member/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/webapp/WEB-INF/views/menu.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/webapp/WEB-INF/views/welcome.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookMarket/src/main/webapp/resources/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules/springex.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules/springex.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules/springex.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules/springex.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/webworkspace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/webworkspace.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../2.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/B01Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/B01Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/config/RootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/config/RootConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/controller/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/controller/SampleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/controller/SampleJSONController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/controller/SampleJSONController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/domain/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/domain/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/domain/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/domain/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/dto/BoardDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/dto/BoardDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/repository/BoardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/repository/BoardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/repository/search/BoardSearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/repository/search/BoardSearchImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/service/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/java/org/zerock/b01/service/BoardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/static/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/static/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/static/css/layout_base.css" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/static/css/layout_base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/static/css/swiper.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/static/css/swiper.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/static/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/static/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/static/js/jquery.smooth-scroll.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/static/js/jquery.smooth-scroll.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/static/js/rollmain.js" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/static/js/rollmain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/static/js/swiper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/static/js/swiper.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/ex1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/ex1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/ex2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/ex2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/ex3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/ex3_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/join.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/join.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/mypage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/mypage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/notice_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/notice_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/program.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/ex/program.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/hello.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/main/resources/templates/layout/layout1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/main/resources/templates/layout/layout1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/test/java/org/zerock/b01/B01ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/test/java/org/zerock/b01/B01ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/test/java/org/zerock/b01/DataSourceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/test/java/org/zerock/b01/DataSourceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/test/java/org/zerock/b01/repository/BoardRepositoryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/test/java/org/zerock/b01/repository/BoardRepositoryTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b01/src/test/java/org/zerock/b01/service/BoardServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../b01/src/test/java/org/zerock/b01/service/BoardServiceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Tomcat_9_0_87.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/java/org/zerock/springex/EventSampleDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/java/org/zerock/springex/SampleDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/java/org/zerock/springex/SampleDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/java/org/zerock/springex/SampleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/java/org/zerock/springex/config/ModelMapperConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/java/org/zerock/springex/controller/SampleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/java/org/zerock/springex/controller/TodoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/java/org/zerock/springex/controller/exception/CommonExceptionAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/java/org/zerock/springex/controller/formatter/CheckboxFormatter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/java/org/zerock/springex/controller/formatter/LocalDateFormatter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/java/org/zerock/springex/domain/TodoVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/java/org/zerock/springex/dto/TodoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/java/org/zerock/springex/lombok.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/java/org/zerock/springex/mapper/TimeMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/java/org/zerock/springex/mapper/TimeMapper2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/java/org/zerock/springex/mapper/TodoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/java/org/zerock/springex/service/TodoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/java/org/zerock/springex/service/TodoServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/resources/META-INF/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/resources/mappers/TimeMapper2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/resources/mappers/TodoMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/webapp/WEB-INF/root-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/webapp/WEB-INF/servlet-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/webapp/WEB-INF/views/custom404.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/webapp/WEB-INF/views/ex4.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/webapp/WEB-INF/views/ex4_1.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/webapp/WEB-INF/views/ex6.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/webapp/WEB-INF/views/hello.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/webapp/WEB-INF/views/todo/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/webapp/WEB-INF/views/todo/modify.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/webapp/WEB-INF/views/todo/read.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/webapp/WEB-INF/views/todo/register.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/main/webapp/resources/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/test/java/org/zerock/springex/SampleTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/test/java/org/zerock/springex/mapper/TimeMapperTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/test/java/org/zerock/springex/mapper/TodoMapperTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springex/src/test/java/org/zerock/springex/service/TodoServiceTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lombok.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/controller/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/controller/TodoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/dto/PageRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/dto/PageRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/TodoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/TodoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/root-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/servlet-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/read.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/read.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mapper/TodoMapperTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapper/TodoMapperTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/zerock/springex/sample/service/TodoServiceTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="springex" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;lsy3709&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/kwanwoo98/spring_uplod.git&quot;,
+    &quot;accountId&quot;: &quot;a73b43a3-2d10-40eb-a9fc-444c18c00e37&quot;
+  }
+}</component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2ezS26tuRFPMPxnHWzF0c4ylkVt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.springex 빌드.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Tomcat 서버.Tomcat 9.0.87.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/java_web/springex&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.87" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.87" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : org.zerock : springex-1.0-SNAPSHOT.war (exploded)">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="fcf082c0-31c4-4da3-9962-b7e0971e98c2" />
+        <option name="HTTP_PORT" value="8081" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61309" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : org.zerock : springex-1.0-SNAPSHOT.war (exploded)" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="825db2de-2b84-4fac-92b6-bf2b7814b5da" name="변경" comment="" />
+      <created>1712905703339</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712905703339</updated>
+      <workItem from="1712905704489" duration="30000" />
+      <workItem from="1714452300579" duration="7195000" />
+      <workItem from="1714521223807" duration="28000" />
+      <workItem from="1714545272815" duration="4027000" />
+      <workItem from="1714634041085" duration="1603000" />
+      <workItem from="1714696479287" duration="3062000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout charset="UTF-8" pattern="%d{hh:mm:ss} 5%p [%c] %m%n" />
+        </Console>
+    </Appenders>
+    <Loggers>
+        <longer name="org.springframework" level="INFO" additivity="flase">
+            <appender-ref ref = "console"/>
+        </longer>
+        <longer name="org.zerock" level="INFO" additivity="flase">
+            <appender-ref ref = "console"/>
+        </longer>
+        <Root level="info" additivity="false">
+            <AppenderRef ref = "console"/>
+        </Root>
+    </Loggers>
+</Configuration>

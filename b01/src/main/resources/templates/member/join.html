@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6"
+      layout:decorate="~{layout/basic.html}">
+<head>
+    <title>Member Join Page</title>
+</head>
+
+<div layout:fragment="content">
+    <div class="row mt-3">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    회원가입
+                </div>
+                <div class="card-body">
+                    <form id="registerForm" action="/member/join" method="post">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">아이디</span>
+                            <input type="text" name="mid" id="mid" class="form-control">
+                            <button type="button" class="btn checkDuplicateBtn">중복확인</button>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">비밀번호</span>
+                            <input type="password" name="mpw" class="form-control">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">비밀번호확인</span>
+                            <input type="text" name="mpw1" class="form-control">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">이름</span>
+                            <input type="text" name="name" class="form-control">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">이메일</span>
+                            <input type="email" name="email" class="form-control">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">주소</span>
+                            <input type="text" name="addr" class="form-control">
+                        </div>
+                        <div class="my-4">
+                            <div class="float-end">
+                                <button type="submit" class="btn btn-primary submitBtn">Submit</button>
+                                <button type="reset" class="btn btn-secondary">Reset</button>
+                            </div>
+                        </div>
+                    </form>
+                </div> <!-- end card body -->
+            </div> <!-- end card -->
+        </div> <!-- end col -->
+    </div> <!-- end row -->
+</div>
+<script layout:fragment="script" th:inline="javascript">
+
+const checkObj = document.querySelector("#registerForm")
+document.querySelector(".checkDuplicateBtn").addEventListener("click",function (e){
+    e.preventDefault()
+    e.stopPropagation()
+
+    checkObj.action = `/member/checkid`
+    checkObj.method = 'post'
+    checkObj.submit()
+
+},false)
+
+const error = [[${error}]]
+if(error && error === 'mid'){
+    alert("동일한 MID를 가진 계정이 존재합니다.")
+}
+
+const success = [[${success}]]
+if(success && error === 'mid'){
+    alert("동일한 MID를 가진 계정이 존재합니다.")
+}
+
+
+</script>

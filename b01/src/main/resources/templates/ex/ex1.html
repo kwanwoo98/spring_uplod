@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a th:href="@{/hello(name='한글 처리',age='16')}"> Go to /hello </a>
+<a href="/hello?name=한글처리&age=16"> Go to /hello </a>
+<ul>
+    <li th:each="str,status: ${list}">
+<!--        th:block >> switch를 사용하기위한 가상태그(역할x)-->
+        <th:block th:switch="${status.index %3}">
+            <span th:case="0">0</span>
+            <span th:case="1">1</span>
+            <span th:case="2">2</span>
+        </th:block>
+    </li>
+</ul>
+<ul>
+<!--    th:text인 경우 " "안에 넣어서 실행하도록 -->
+    <li th:each="str,status: ${list}">
+        <span th:text="${status.odd} ?'ODD---'+${str} : 'EVEN----'+${str}"></span>
+    </li>
+</ul>
+
+<ul>
+    <th:block th:each="str:${list}">
+        <li>[[${str}]]</li>
+    </th:block>
+</ul>
+<ul>
+    <li th:each="str:${list}" th:text="${str}"></li>
+</ul>
+
+<ul>
+<!--    status > 선택사항
+status : index. count. size. first. last. odd. even
+
+th:each >> 자바의 for-each 와 같다-->
+    <li th:each="str,status:${list}" >
+        [[${status.index}]]--[[${status.count}]]--[[${status.size}]]--[[${status.first}]]--[[${status.last}]]--[[${status.odd}]]--[[${status.even}]]--[[${str}]]
+    </li>
+</ul>
+<ul>
+    <li th:each="str,status:${list}" >
+        <!--            if ==-->
+        <!--            unless !=-->
+<!--        if는 true일때 span태그 출력-->
+<!--        unless는 false일때 span태그 출력-->
+        <span th:if="${status.odd}">ODD -- [[${str}]]</span>
+        <span th:unless="${status.odd}">EVEN -- [[${str}]]</span>
+    </li>
+</ul>
+
+<!--    인라인 방식-->
+<h4>[[${list}]]</h4>
+<hr/>
+<!--    태그 방식-->
+<h4 th:text="${list}"></h4>
+
+
+</body>
+</html>

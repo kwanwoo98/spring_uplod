@@ -29,8 +29,12 @@ public class APIUserDetailsService implements UserDetailsService {
     log.info("APIUserDetailsService apiUser ------------------------------------------");
     //에러가 없다면 APIUserDTO를 생성하고 권한은 ROLE_USER 로 설정
     APIUserDTO dto = new APIUserDTO(
-        apiUser.getMid(),
-        apiUser.getMpw(),
+            apiUser.getMid(),
+            apiUser.getMpw(),
+            apiUser.getName(),
+            apiUser.getEmail(),
+        apiUser.isEmailCheck(),
+        apiUser.isSnsCheck(),
         List.of(new SimpleGrantedAuthority("ROLE_USER"))
     );
     log.info(dto);

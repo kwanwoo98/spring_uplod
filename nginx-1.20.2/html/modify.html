@@ -2,28 +2,27 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Hello, world!</title>
+    <title>Modify</title>
 </head>
 <body>
 <div class="container-fluid">
-    <form name="read" action="/read" method="get">
+    <form name="modifyForm">
     <div class="row">
-        <!-- <%--        <h1>Header</h1>--%> -->
         <div class="row">
             <div class="col">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">Navbar</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                <a class="nav-link" href="#">Link</a>
-                                <a class="nav-link" href="#">Features</a>
-                                <a class="nav-link" href="#">Pricing</a>
-                                <a class="nav-link" disabled>Disabled</a>
+                                <a class="nav-link" href="list.html">목록</a> <br>
+                                <a class="nav-link" id="auth-link" href="apiLogin.html">로그인</a>
+                                <a class="nav-link" id="auth-link2" href="apiJoin.html">회원가입</a>
                             </div>
                         </div>
                     </div>
@@ -61,10 +60,10 @@
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                Finished &nbsp;
+                                Complete &nbsp;
                             </label>
                             <input class="form-check-input"
-                                    type="checkbox" name="finished" >
+                                    type="checkbox" name="complete" >
                         </div>
                         <div class="my-4">
                             <div class="float-end">
@@ -103,11 +102,11 @@ function pageStart(url){
     console.log(url)
     callServer(url).then(result=>{
         console.log(result)
-        document.read.tno.value = result.tno
-        document.read.title.value = result.title
-        document.read.dueDate.value = result.dueDate
-        document.read.writer.value = result.writer
-        document.read.finished.checked = result.complete
+        document.modifyForm.tno.value = result.tno
+        document.modifyForm.title.value = result.title
+        document.modifyForm.dueDate.value = result.dueDate
+        document.modifyForm.writer.value = result.writer
+        document.modifyForm.complete.checked = result.complete
     }).catch(error =>{
         alert(error)
     })
@@ -124,15 +123,40 @@ document.querySelector(".btn-danger").addEventListener("click",function(e){
 document.querySelector(".btn-primary").addEventListener("click",function(e){
     e.stopPropagation()
     e.preventDefault()
-    let tno = document.getElementById("tno").value
-    location.href = "/modify.html"+tno
+    let modifyForm = document.modifyForm
+    let formData = {
+        "tno":modifyForm.tno.value,
+        "title":modifyForm.title.value,
+        "dueDate":modifyForm.dueDate.value,
+        "writer":modifyForm.writer.value,
+        "complete":modifyForm.complete.checked
+    }
+    let url = "http://localhost:8080/api/todo/"+modifyForm.tno.value
+    modify(url, formData).then(function(){
+        location.href = "/list.html"
+    })
 },false)
 document.querySelector(".btn-secondary").addEventListener("click",function(e){
     e.stopPropagation()
     e.preventDefault()
     location.href = "/list.html"
 },false)
-
+function checkAuthToken() {
+        const token = localStorage.getItem("accessToken");
+        const authLink = document.getElementById("auth-link");
+        const authLink2 = document.getElementById("auth-link2");
+        if (token) {
+            authLink.innerText = "로그아웃";
+            authLink.href = "#";
+            authLink2.innerText = "회원정보수정";
+            authLink2.href = "apiModify.html";
+            authLink.addEventListener("click", function(e) {
+                e.preventDefault();
+                localStorage.removeItem("accessToken");
+                location.reload();
+            });
+        }
+    }
 </script>
 </body>
 </html>

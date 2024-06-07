@@ -19,11 +19,9 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                <a class="nav-link" href="#">Link</a>
-                                <a class="nav-link" href="#">Features</a>
-                                <a class="nav-link" href="#">Pricing</a>
-                                <a class="nav-link" disabled>Disabled</a>
+                                <a class="nav-link" href="list.html">목록</a>
+                                <a class="nav-link" id="auth-link" href="apiLogin.html">로그인</a>
+                                <a class="nav-link" id="auth-link2" href="apiJoin.html">회원가입</a>
                             </div>
                         </div>
                     </div>
@@ -107,6 +105,7 @@ document.querySelector(".btn1").addEventListener("click",(e) =>{
     let url = "http://localhost:8080/api/todo/"+tno
     pageStart(url)
 },false)
+
 function pageStart(url){
     console.log(url)
     callServer(url).then(result=>{
@@ -120,6 +119,7 @@ function pageStart(url){
         alert(error)
     })
 }
+
 document.querySelector(".modifyBtn").addEventListener("click",function(e){
     e.stopPropagation()
     e.preventDefault()
@@ -131,7 +131,22 @@ document.querySelector(".btn-secondary").addEventListener("click",function(e){
     e.preventDefault()
     location.href = "/list.html"
 },false)
-
+function checkAuthToken() {
+        const token = localStorage.getItem("accessToken");
+        const authLink = document.getElementById("auth-link");
+        const authLink2 = document.getElementById("auth-link2");
+        if (token) {
+            authLink.innerText = "로그아웃";
+            authLink.href = "#";
+            authLink2.innerText = "회원정보수정";
+            authLink2.href = "apiModify.html";
+            authLink.addEventListener("click", function(e) {
+                e.preventDefault();
+                localStorage.removeItem("accessToken");
+                location.reload();
+            });
+        }
+    }
 </script>
 </body>
 </html>

@@ -4,7 +4,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
-import org.zerock.api01.domain.Todo;
 import org.zerock.api01.dto.PageRequestDTO;
 import org.zerock.api01.dto.PageResponseDTO;
 import org.zerock.api01.dto.TodoDTO;
@@ -24,6 +23,7 @@ public class TodoController {
     Long tno = todoService.register(todoDTO);
     return Map.of("tno",tno);
   }
+
   @GetMapping("/{tno}")
   public TodoDTO read(@PathVariable("tno") Long tno){
     log.info(tno);

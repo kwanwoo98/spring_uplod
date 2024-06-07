@@ -30,7 +30,7 @@ public class APILoginSuccessHandler implements AuthenticationSuccessHandler {
     String accessToken = jwtUtil.generateToken(claim,1);
     String refreshToken = jwtUtil.generateToken(claim,30);
     Gson gson = new Gson();
-    Map<String,String> keyMap = Map.of("accessToken",accessToken, "refreshToken", refreshToken);
+    Map<String,String> keyMap = Map.of("accessToken",accessToken, "refreshToken", refreshToken,"mid",authentication.getName());
     String jsonStr = gson.toJson(keyMap);
     response.getWriter().println(jsonStr);
   }

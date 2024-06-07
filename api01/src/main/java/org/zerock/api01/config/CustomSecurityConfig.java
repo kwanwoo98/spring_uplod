@@ -47,7 +47,10 @@ public class CustomSecurityConfig {
     log.info("---------------web configure-----------------");
     // 정적 파일 요청 무시하는 설정
     return (web) -> web.ignoring()
-        .requestMatchers(PathRequest.toStaticResources().atCommonLocations());
+        .requestMatchers(PathRequest.toStaticResources().atCommonLocations())
+            .requestMatchers("/api/member/join")
+
+            ;
   }
 
   @Bean
@@ -118,18 +121,6 @@ public class CustomSecurityConfig {
     return source;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

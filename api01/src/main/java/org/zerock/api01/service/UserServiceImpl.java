@@ -39,18 +39,25 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void update(JoinDTO joinDTO) {
+        log.info("Updating user: " + joinDTO);
         Optional<APIUser> result = apiUserRepository.findById(joinDTO.getMid());
-        APIUser user = result.orElseThrow();
-        user.changePw(passwordEncoder.encode(joinDTO.getMpw()));
-        user.changeName(joinDTO.getName());
-        user.changeEmail(joinDTO.getEmail());
-        user.changeEmailCheck(joinDTO.isEmailCheck());
-        user.changeSnsCheck(joinDTO.isSnsCheck());
-        apiUserRepository.save(user);
+        if (result.isPresent()) {
+            APIUser user = result.get();
+            user.changePw(passwordEncoder.encode(joinDTO.getMpw()));
+            user.changeName(joinDTO.getName());
+            user.changeEmail(joinDTO.getEmail());
+            user.changeEmailCheck(joinDTO.isEmailCheck());
+            user.changeSnsCheck(joinDTO.isSnsCheck());
+            apiUserRepository.save(user);
+        } else {
+            log.warn("User not found with ID: " + joinDTO.getMid());
+        }
     }
+
 
     @Override
     public void remove(String mid) {
         apiUserRepository.deleteById(mid);
     }
+
 }

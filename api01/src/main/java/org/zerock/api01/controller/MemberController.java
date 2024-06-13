@@ -28,12 +28,19 @@ public class MemberController {
     }
 
     @PostMapping("/modify")
-    public Map<String,String> modify(@RequestBody JoinDTO joinDTO){
-        log.info(joinDTO);
-        String mid = userService.register(joinDTO);
+    public Map<String, String> modify(@RequestBody JoinDTO joinDTO) {
+        log.info("Received update request: " + joinDTO);
         userService.update(joinDTO);
-        return Map.of("mid",mid);
+        return Map.of("mid", joinDTO.getMid());
     }
+
+
+    @DeleteMapping("/{mid}")
+    public Map<String, String> delete(@PathVariable("mid") String mid) {
+        userService.remove(mid);
+        return Map.of("result", "success");
+    }
+
 
     @GetMapping("/{mid}")
     public JoinDTO get(@PathVariable("mid") String mid){

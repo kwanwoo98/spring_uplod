@@ -114,19 +114,28 @@ const join = async (url, formData) => {
 };
 
 const update = async (url, formData) => {
-    // localStorage에서 accessToken을 가져옴
-    
     try {
-        // AJAX 요청 실행   
         const res = await axios.post(url, formData);
-        // 요청이 성공하면 데이터 반환
         return res.data;
     } catch (err) {
-        // accessToken이 만료된 경우
-       console.log(err);
+        console.log("Error during update:", err);
     }
-
 };
+
+
+
+const removeid = async (url) => {
+    const accessToken = localStorage.getItem("accessToken");
+    const authHeader = { "authorization": `Bearer ${accessToken}` };
+
+    try {
+        const res = await axios.delete(url, { headers: authHeader });
+        return res.data;
+    } catch (err) {
+        console.log(err);
+    }
+};
+
 
 const remove = async (url) => {
     // accessToken을 localStorage에서 취득

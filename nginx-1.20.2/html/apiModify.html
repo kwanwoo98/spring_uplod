@@ -43,6 +43,7 @@
                             <div class="input-group mb-3">
                                 <div class="float-end">
                                     <button class="btn btn-primary updateBtn" type="button">수정완료</button>
+                                    <button class="btn btn-danger" type="button">계정삭제</button>
                                 </div>
                             </div>
                         </form>
@@ -81,20 +82,35 @@
         }
 
         document.querySelector(".updateBtn").addEventListener("click", function (e) {
-            let updateForm = document.updateForm
+            let updateForm = document.updateForm;
             let formData = {
+                "mid": updateForm.mid.value, 
                 "mpw": updateForm.mpw.value,
                 "name": updateForm.name.value,
                 "email": updateForm.email.value,
                 "emailCheck": updateForm.emailCheck.checked,
                 "snsCheck": updateForm.snsCheck.checked
-            }
+            };
 
-            let url = "http://localhost:8080/api/member/modify"
+            let url = "http://localhost:8080/api/member/modify";
             update(url, formData).then(function () {
-                location.href = "/list.html"
-            })
-        }, false)
+                location.href = "/list.html";
+            });
+        }, false);
+
+
+        document.querySelector(".btn-danger").addEventListener("click", function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            let mid = document.getElementById("mid").value;
+            let url = `http://localhost:8080/api/member/${mid}`;
+            removeid(url).then(() => {
+                localStorage.removeItem("accessToken");
+                localStorage.removeItem("refreshToken");
+                location.href = "/list.html";
+            });
+        }, false);
+
     </script>
 </body>
 

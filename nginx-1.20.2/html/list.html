@@ -168,6 +168,7 @@
             authLink.addEventListener("click", function(e) {
                 e.preventDefault();
                 localStorage.removeItem("accessToken");
+                localStorage.removeItem("refreshToken");
                 location.reload();
             });
         }

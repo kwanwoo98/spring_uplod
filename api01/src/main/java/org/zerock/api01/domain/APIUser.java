@@ -18,21 +18,27 @@ public class APIUser {
   private String email;
   private boolean emailCheck;
   private boolean snsCheck;
-  public void changePw(String mpw){
-    this.mpw = mpw;
+
+  public void changePw(String newPassword) {
+    this.mpw = newPassword;
   }
-  public void changeName(String name){
-    this.name = name;
+
+  public void changeName(String newName) {
+    this.name = newName;
   }
-  public void changeEmail(String email){
-    this.email = email;
+
+  public void changeEmail(String newEmail) {
+    this.email = newEmail;
   }
-  public void changeEmailCheck(boolean emailCheck){
+
+  public void changeEmailCheck(boolean emailCheck) {
     this.emailCheck = emailCheck;
   }
-  public void changeSnsCheck(boolean snsCheck){
+
+  public void changeSnsCheck(boolean snsCheck) {
     this.snsCheck = snsCheck;
   }
+
 
 
 }
